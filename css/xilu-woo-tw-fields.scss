@@ -1,0 +1,46 @@
+.woocommerce {
+    .form-row.xilu-form-row-none {
+        display: none !important;
+    }
+
+    #billing_twzipcode,
+    #shipping_twzipcode {
+        display: flex;
+        padding-bottom: 5px;
+        &>select {
+            flex-grow: 0;
+            width: auto;
+            &:not(:last-child) {
+                margin-right: .5em;
+            }
+        }
+        
+    }
+}
+
+/* wc address book 修正 */
+.address_book {
+    .addresses {
+        .wc-address-book-address {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            address {
+                margin-bottom: 0;
+                order: 1;
+            }
+
+            .wc-address-book-meta {
+                order: 2;
+                a {
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+}
