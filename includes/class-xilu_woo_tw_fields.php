@@ -100,8 +100,8 @@ class Xilu_woo_tw_fields {
     // 預設欄位刪除調整
     public function default_address_fields( $fields ) {
         unset( $fields[ 'last_name' ] );
-        unset( $fields[ 'company' ] );
-        unset( $fields[ 'address_2' ] );
+        //unset( $fields[ 'company' ] );
+        //unset( $fields[ 'address_2' ] );
         return $fields;
     }
 
