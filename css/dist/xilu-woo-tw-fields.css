@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.woocommerce .form-row.xilu-form-row-none {
+  display: none !important;
+}
+
+.woocommerce #billing_twzipcode,
+.woocommerce #shipping_twzipcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.woocommerce #billing_twzipcode > select,
+.woocommerce #shipping_twzipcode > select {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: auto;
+}
+
+.woocommerce #billing_twzipcode > select:not(:last-child),
+.woocommerce #shipping_twzipcode > select:not(:last-child) {
+  margin-right: .5em;
+}
+
+/* wc address book 修正 */
+.address_book .addresses .wc-address-book-address {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.address_book .addresses .wc-address-book-address address {
+  margin-bottom: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.address_book .addresses .wc-address-book-address .wc-address-book-meta {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.address_book .addresses .wc-address-book-address .wc-address-book-meta a {
+  font-size: 15px;
+  text-decoration: none;
+}
+/*# sourceMappingURL=xilu-woo-tw-fields.css.map */
